@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467549471311",
+    "firebase_url": "https://my-project-c4c6f.firebaseio.com",
+    "project_id": "my-project-c4c6f",
+    "storage_bucket": "my-project-c4c6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467549471311:android:b6bbae337f43feea",
+        "android_client_info": {
+          "package_name": "com.ravneet.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467549471311-ficptephc5rqoie7u5avo0rhd0m3v00e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNRukANNxsOoWVp_J2R-Ts7S2aAG-FKjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467549471311-ficptephc5rqoie7u5avo0rhd0m3v00e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
