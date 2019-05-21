@@ -1,64 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientmain"
+    android:padding="16dp"
+    android:layout_gravity="center"
     tools:context=".ui.MainActivity">
 
-
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Add Baby"
-        app:layout_constraintEnd_toStartOf="@+id/buttonFeed"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttonFeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:text="Feed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
 
-    <Button
-        android:id="@+id/buttonVaccine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="200dp"
-        android:text="Vaccine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonApp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonApp"
-        android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/imagebaby"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/ic_baby"
+                    />
+
+                <TextView
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Baby"
+                    android:textColor="@color/center"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imagefeed"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/ic_feed"
+                    />
+
+                <TextView
+                    android:id="@+id/buttonFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feed"
+                    android:textColor="@color/center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="200dp"
-        android:text="App Info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFeed" />
-</android.support.constraint.ConstraintLayout>
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imagevaccine"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/ic_vaccine"
+                    />
+
+                <TextView
+                    android:id="@+id/buttonVaccine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vaccine"
+                    android:textColor="@color/center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageappinfo"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:background="@color/White"
+                    android:src="@mipmap/info" />
+
+                <TextView
+                    android:id="@+id/buttonApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About App"
+                    android:textColor="@color/center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

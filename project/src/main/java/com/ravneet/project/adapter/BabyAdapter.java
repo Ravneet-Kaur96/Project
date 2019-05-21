@@ -55,7 +55,7 @@ public class BabyAdapter extends RecyclerView.Adapter<BabyAdapter.viewHolder> {
 
 
         holder.txtName.setText(baby.name);
-        holder.txtDOB.setText(baby.dob);
+        holder.txtDOB.setText(baby.dob.toString());
         holder.txtGender.setText(baby.gender);
 
     }

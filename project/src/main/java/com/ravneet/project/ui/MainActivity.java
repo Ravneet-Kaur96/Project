@@ -6,17 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.ravneet.project.R;
-import com.ravneet.project.SplashActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnAddBaby, btnFeed, btnVaccine, btnAppInfo;
+    ImageView imageBaby, imageFeed, imageVaccine, imageAppinfo;
+
+    TextView btnAddBaby, btnFeed, btnVaccine, btnAppInfo;
 
     FirebaseAuth auth;
 
@@ -26,10 +26,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnVaccine = findViewById(R.id.buttonVaccine);
         btnAppInfo=findViewById(R.id.buttonApp);
 
+        imageBaby=findViewById(R.id.imagebaby);
+        imageFeed=findViewById(R.id.imagefeed);
+        imageVaccine=findViewById(R.id.imagevaccine);
+        imageAppinfo=findViewById(R.id.imageappinfo);
+
+
         btnAddBaby.setOnClickListener(this);
         btnFeed.setOnClickListener(this);
         btnVaccine.setOnClickListener(this);
         btnAppInfo.setOnClickListener(this);
+
+        imageBaby.setOnClickListener(this);
+        imageFeed.setOnClickListener(this);
+        imageVaccine.setOnClickListener(this);
+        imageAppinfo.setOnClickListener(this);
     }
 
     @Override
@@ -50,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (item.getItemId() == 101) {
             auth.signOut();
 
-            Intent intent = new Intent(MainActivity.this, SplashActivity.class);
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
             startActivity(intent);
             finish();
         }
@@ -73,13 +84,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.buttonVaccine:
-                Intent intent2= new Intent(MainActivity.this,VaccinationChartActivity.class);
+                Intent intent2= new Intent(MainActivity.this, VaccinationKnowledgeActivity.class);
                 startActivity(intent2);
                 break;
 
             case R.id.buttonApp:
                 Intent intent3= new Intent(MainActivity.this,AppInfoActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.imagebaby:
+                Intent intent4 = new Intent(MainActivity.this, AddBabyActivity.class);
+                startActivity(intent4);
+                break;
+
+            case R.id.imagefeed:
+                Intent intent5 = new Intent(MainActivity.this, FeedActivity.class);
+                startActivity(intent5);
+                break;
+
+            case R.id.imagevaccine:
+                Intent intent6 = new Intent(MainActivity.this, VaccinationKnowledgeActivity.class);
+                startActivity(intent6);
+                break;
+
+            case R.id.imageappinfo:
+                Intent intent7 = new Intent(MainActivity.this, AppInfoActivity.class);
+                startActivity(intent7);
                 break;
         }
 

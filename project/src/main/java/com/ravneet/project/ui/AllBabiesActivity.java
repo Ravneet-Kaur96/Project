@@ -163,8 +163,8 @@ public class AllBabiesActivity extends AppCompatActivity implements OnRecyclerIt
                     case 3:
                         break;
                     case 4:
-                        Intent intent1=new Intent(AllBabiesActivity.this,VaccinationChartActivity.class);
-                        intent1.putExtra("keyDueDate",baby.dob);
+                        Intent intent1=new Intent(AllBabiesActivity.this, VaccinationChartActivity.class);
+                        intent1.putExtra("keyBabyId",baby.docId);
                         startActivity(intent1);
                         break;
                 }

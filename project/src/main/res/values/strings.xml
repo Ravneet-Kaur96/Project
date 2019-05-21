@@ -334,6 +334,14 @@ TDaP vaccine can protect us from these diseases.
     <string name="Info">Vaccination of Child should be done well in time to protect the child from various diseases, but todays lifestyle results in parents load with extensive responsibilities and stress. There might have been times when parent can forgot the date of getting their child vaccinated.
 <i>i-Care</i> is an android application which has been especially designed for parents to notify the important vaccination dates and keep a track of the vaccination schedules for their child.
 </string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
 
 
 </resources>

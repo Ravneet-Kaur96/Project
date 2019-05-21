@@ -106,10 +106,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if (id == R.id.buttonRegister) {
             user.name = eTxtName.getText().toString();
             user.email=etxtEmail.getText().toString();
-            user.phone = eTxtPhone.getText().toString();
             user.password = etxtPassword.getText().toString();
+            user.phone = eTxtPhone.getText().toString();
 
-            registerUser();
             if (Util.isInternetConnected(this)) {
                 registerUser();
             } else {
@@ -131,12 +130,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isComplete()) {
-                            Toast.makeText(RegisterActivity.this, user.name + "Registered Successsfully", Toast.LENGTH_LONG).show();
-                            progressDialog.dismiss();
-
-                            Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
-                            startActivity(intent);
-                            finish();
+//                            Toast.makeText(RegisterActivity.this, user.name + "Registered Successsfully", Toast.LENGTH_LONG).show();
+//                            progressDialog.dismiss();
+//
+//                            Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+//                            startActivity(intent);
+//                            finish();
                             saveUserInCloudDB();
                         }
                     }
@@ -170,9 +169,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         Toast.makeText(RegisterActivity.this, user.name + "Registered Sucessfully", Toast.LENGTH_LONG).show();
                         progressDialog.dismiss();
 
-                        Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
+                        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                         startActivity(intent);
-                        finish();
+//                        finish();
 
                     }
                 });

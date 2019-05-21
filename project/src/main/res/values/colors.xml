@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5B86E5</color>
-    <color name="colorPrimaryDark">#0A4A7E</color>
+    <color name="colorPrimary">#6fb1fc</color>
+    <color name="colorPrimaryDark">#2f80ed</color>
     <color name="colorAccent">#0D89EB</color>
     <color name="White">#FFFFFF</color>
     <color name="Red">#FF0000</color>
@@ -29,6 +29,9 @@
     <color name="center">#4364f7</color>
     <color name="end">#6fb1fc</color>
     <color name="bg">#C9DFF8</color>
+    <color name="puranaprimary">#5B86E5</color>
+    <color name="puranaprimarydark">#0D6CB8</color>
+    <color name="puranaaccent">#0D89EB</color>
 
     <color name="fonts">#0D89EB</color>
 </resources>

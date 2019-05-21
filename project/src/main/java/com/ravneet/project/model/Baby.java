@@ -8,7 +8,7 @@ import java.util.Date;
 public class Baby implements Serializable {
 
     public String name;
-    public String dob;
+    public Date dob;
     public String gender;
     public String docId;
     public ArrayList<Vaccination> vaccinations;
@@ -17,23 +17,22 @@ public class Baby implements Serializable {
     public Baby() {
     }
 
-    public Baby(String name, String dob, String gender, String docId) {
+    public Baby(String name, Date dob, String gender, String docId, ArrayList<Vaccination> vaccinations) {
         this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.docId = docId;
+        this.vaccinations = vaccinations;
     }
-
-
-
 
     @Override
     public String toString() {
         return "Baby{" +
                 "name='" + name + '\'' +
-                ", dob='" + dob + '\'' +
+                ", dob=" + dob +
                 ", gender='" + gender + '\'' +
                 ", docId='" + docId + '\'' +
+                ", vaccinations=" + vaccinations +
                 '}';
     }
 }

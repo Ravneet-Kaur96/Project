@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.ravneet.project.ui.HomeActivity;
+import com.ravneet.project.ui.LoginActivity;
 import com.ravneet.project.ui.MainActivity;
 import com.ravneet.project.ui.RegisterActivity;
 
@@ -40,11 +42,11 @@ public class SplashActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             if(msg.what == 101) {
-                Intent intent = new Intent(SplashActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             } else {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
